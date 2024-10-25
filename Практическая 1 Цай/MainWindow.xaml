@@ -11,7 +11,7 @@
 
     <Grid>
         <TextBox x:Name="tbs" HorizontalAlignment="Left" Margin="11,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" Height="24" IsEnabled="False"/>
-        <TextBox x:Name="tbr" HorizontalAlignment="Left" Margin="12,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Height="24" IsEnabled="False"/>
+        <TextBox x:Name="tbr" HorizontalAlignment="Left" Margin="12,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Height="63" IsEnabled="False"/>
         <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="111,323,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click"/>
         <TextBox x:Name="tbv" HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="23" TextChanged="tbv_TextChanged"/>
         <Menu Height="20" VerticalAlignment="Top">

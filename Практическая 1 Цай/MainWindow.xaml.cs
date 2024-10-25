@@ -24,22 +24,22 @@ namespace Практическая_1_Цай
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            bool f1,f2,f3;
-            f1 = Int32.TryParse(tbv.Text,out int n);
-            if (f1)
+            bool f2;
+            f2 = Int32.TryParse(tbv.Text, out int n);
+            if (f2)
             {
-                n = Convert.ToInt32(tbv.Text);
                 string s = "";
                 Random rnd = new Random();
                 for (int i = 0; i < n; i++)
                 {
-                    int x = rnd.Next(1, n);
+                    int x = rnd.Next(0, n);
                     s += x + " ";
                 }
                 tbs.Text = s;
-                float mult = 0;
-                Class1.Func(n, s, out mult);
-                tbr.Text = mult.ToString();
+                Class1.Mult(n, s, out float mult);
+                Class1.Dif(n, s, out float dif);
+                Class1.Sum(n, s, out float sum);
+                tbr.Text ="Произведение чисел = " + mult.ToString() + "\r\nРазность чисел = " + dif.ToString() + "\r\nСумма чисел = " + sum.ToString();
             }
             else MessageBox.Show("Введите верные значения","Ошибка",MessageBoxButton.OK);
         }
